@@ -6,7 +6,7 @@ import "./App.css";
 const App = () => {
   const [courseGoals, setCourseGoals] = useState([
     { id: "cg1", text: "Finish the Course" },
-    { id: "cg2", text: "Learn all of Course Main Topic" },
+    { id: "cg2", text: "Learn all of Course main topics" },
     { id: "cg3", text: "Help other students in Q&A" },
   ]);
 
