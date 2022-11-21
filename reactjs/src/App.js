@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import GoalList from "./components/GoalList/GoalList";
 import NewGoal from "./components/NewGoal/NewGoal";
 import "./App.css";
+import Header from "./components/GoalList/Header/Header";
 
 const App = () => {
   const [courseGoals, setCourseGoals] = useState([
@@ -19,6 +20,7 @@ const App = () => {
 
   return (
     <div className="course-goals">
+      <Header/>
       <h2>Course Goals</h2>
       <NewGoal onAddGoal={addNewGoalHandler} />
       <GoalList goals={courseGoals} />
